@@ -49,3 +49,5 @@ print('Y_test',y_test)
 from sklearn.metrics import accuracy_score
 print('Accuracy Score :',accuracy_score(y_test, y_pred)*100,'%')
 
+import pickle
+pickle.dump(NB,open('model.pkl','wb'))
